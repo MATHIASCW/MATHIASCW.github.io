@@ -1,0 +1,1 @@
+:root{--ink:#202623;--paper:#f7f4ee;--muted:#68706a;--line:#c9c8bf;--coral:#e85d4a;--mint:#a7c8b5;--yellow:#fcfcfc;--mono:'DM Mono',monospace}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Space Grotesk',sans-serif}button{font-family:inherit}::selection{background:var(--coral);color:white}
