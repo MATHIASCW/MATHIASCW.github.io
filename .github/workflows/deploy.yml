@@ -20,7 +20,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build -- --base-href /MATHIASCW.github.io/
+      - run: npm run build -- --base-href /
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/mathias-portfolio/browser
