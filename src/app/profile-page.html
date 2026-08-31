@@ -1,1 +1,100 @@
-<section class="profile-hero"><p class="eyebrow">02 · {{ language === 'fr' ? 'Profil' : 'Profile' }}</p><h1>{{ language === 'fr' ? 'Développeur web, curieux par nature.' : 'A web developer, curious by nature.' }}</h1><p class="lead">{{ language === 'fr' ? 'Je transforme les besoins métier en interfaces et services fiables, en m’appuyant sur une expérience concrète en ESN et une formation orientée données.' : 'I turn business needs into reliable interfaces and services, combining hands-on consultancy experience with a data-focused education.' }}</p></section><section class="profile-section"><div class="section-label"><span>01</span><span>{{ language === 'fr' ? 'Parcours' : 'Background' }}</span></div><div class="profile-grid"><div><h2>{{ language === 'fr' ? 'Expérience\nprofessionnelle' : 'Professional\nexperience' }}</h2><div class="timeline"><article><span>2024—2025</span><h3>Stage Développeur Web</h3><p><b>Doing · Saint-Étienne</b><br>PHP, Symfony, Vue.js, API Platform, PostgreSQL, CI/CD et Agile/Scrum. Travail sur E-Totem, Iloo, Uniscité et Infra Dashboard.</p></article><article><span>19.12.22—16.01.23</span><h3>Stage Administration Systèmes</h3><p><b>DAAF · La Réunion</b><br>Installation et clonage de postes, comptes utilisateurs, configuration réseau et scripts d’installation silencieuse.</p></article></div></div><div><h2>{{ language === 'fr' ? 'Formation\n&amp; repères' : 'Education\n&amp; details' }}</h2><div class="timeline"><article><span>2026</span><h3>Master Informatique DSC</h3><p>Université Jean Monnet, Saint-Étienne<br>Données, Services, Connaissance</p></article><article><span>2023</span><h3>Licence Informatique</h3><p>Université de La Réunion</p></article><article><span>Certifications</span><h3>SecNumAcadémie · Google Analytics</h3><p>Free Foundational C# with Microsoft Certification · freeCodeCamp</p></article></div></div></div></section><section class="skills-strip"><div><b>{{ language === 'fr' ? 'Compétences' : 'Skills' }}</b><p>PHP · Symfony · Vue.js · JavaScript · API Platform · PostgreSQL · Git · Docker · Python · Java · C++</p></div><div><b>{{ language === 'fr' ? 'Langues & mobilité' : 'Languages & mobility' }}</b><p>{{ language === 'fr' ? 'Français natif · Anglais B2 · Espagnol B1' : 'Native French · English B2 · Spanish B1' }}<br>{{ language === 'fr' ? 'Originaire de La Réunion · mobilité nationale' : 'From La Réunion · open to relocate in France' }}</p></div></section><section class="profile-contact"><p class="eyebrow">03 · Contact</p><h2>{{ language === 'fr' ? 'Parlons de votre prochain projet.' : 'Let’s talk about your next project.' }}</h2><a class="button button-light" href="mailto:mathias.candidature@gmail.com">mathias.candidature@gmail.com ↗</a></section>
+<section class="profile-hero">
+	<p class="eyebrow">{{ language === 'fr' ? 'Profil' : 'Profile' }}</p>
+	<h1>{{ language === 'fr' ? 'Développeur web, curieux par nature.' : 'A web developer, curious by nature.' }}</h1>
+	<p class="lead">{{ language === 'fr' ? 'Je transforme les besoins métier en interfaces et services fiables, en m’appuyant sur 11 mois de stages en développement web et une formation orientée données.' : 'I turn business needs into reliable interfaces and services, backed by 11 months of web development internships and a data-focused education.' }}</p>
+	<div class="profile-meta">
+		<span>{{ language === 'fr' ? '11 mois d’expérience cumulée' : '11 months of total experience' }}</span>
+		<span>{{ language === 'fr' ? 'Disponible immédiatement' : 'Available immediately' }}</span>
+		<span>{{ language === 'fr' ? 'Saint-Étienne · mobilité nationale' : 'Saint-Étienne · open to relocate' }}</span>
+		<a href="mailto:mathias.candidature@gmail.com">mathias.candidature@gmail.com</a>
+	</div>
+</section>
+<section class="profile-section">
+	<div class="section-label"><span>{{ language === 'fr' ? 'Parcours' : 'Background' }}</span></div>
+	<div class="profile-grid">
+		<div>
+			<h2>{{ language === 'fr' ? 'Expérience\nprofessionnelle' : 'Professional\nexperience' }}</h2>
+			<div class="timeline">
+				<article>
+					<span>Fév. — Juil. 2025 · 6 mois</span>
+					<h3>Stage — Développeur Web</h3>
+					<p><b>Doing · Saint-Étienne</b></p>
+					<ul class="experience-list">
+						<li>Développement d’applications web métier en PHP, JavaScript, Vue.js et Symfony.</li>
+						<li><b>E-Totem :</b> refonte de l’autofacturation, gestion des factures et des abonnements.</li>
+						<li><b>Iloo :</b> débogage d’une API et refactoring après une alerte SonarCloud.</li>
+						<li><b>Uniscité :</b> ajout de fonctions de recherche et de réinitialisation pour une liste de mails.</li>
+						<li>Travail en Agile/Scrum avec CI/CD Jenkins/Bitbucket, Jira, Confluence, tests, revues de code et documentation.</li>
+					</ul>
+					<p>Easy2Do · Doctrine ORM · Twig · API Platform · PostgreSQL · Ajax · YAML · Postman · Docker</p>
+				</article>
+				<article>
+					<span>Mars — Août 2024 · 4 mois</span>
+					<h3>Stage — Développeur Web</h3>
+					<p><b>Doing · Saint-Étienne</b></p>
+					<ul class="experience-list">
+						<li>Développement d’un script PHP pour migrer plus de 900 fichiers Word vers SharePoint.</li>
+						<li>Conception d’un outil web PHP, Symfony et Vue.js pour suivre les performances de l’entreprise.</li>
+						<li>Livraison aux chefs de projet, tests et documentation technique.</li>
+					</ul>
+				</article>
+				<article>
+					<span>19.12.22 — 16.01.23 · 4 semaines / 140 h</span>
+					<h3>Stage — Administration de postes de travail</h3>
+					<p><b>DAAF · Direction de l’Alimentation, de l’Agriculture et de la Forêt · La Réunion</b></p>
+					<ul class="experience-list">
+						<li>Installation manuelle et clonage de postes, paramétrage BIOS/OS et mise en place du matériel.</li>
+						<li>Création de comptes utilisateurs et configuration du proxy, de l’intranet et de la messagerie.</li>
+						<li>Création de scripts DOS d’installation et de désinstallation silencieuses.</li>
+					</ul>
+				</article>
+			</div>
+		</div>
+		<div>
+			<h2>{{ language === 'fr' ? 'Formation\n&amp; repères' : 'Education\n&amp; details' }}</h2>
+			<div class="timeline">
+				<article><span>2026</span><h3>Master Informatique DSC</h3><p>Université Jean Monnet, Saint-Étienne<br>Données, Services, Connaissance</p></article>
+				<article><span>2023</span><h3>Licence Informatique</h3><p>Université de La Réunion</p></article>
+				<article><span>2020</span><h3>Bac Sciences de l’Ingénieur</h3><p>Spécialité Informatique · Mention Assez Bien</p></article>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="skills-section">
+	<div class="section-label"><span>{{ language === 'fr' ? 'Compétences & repères' : 'Skills & details' }}</span></div>
+	<div class="skills-layout">
+		<div class="skills-main">
+			<h2>{{ language === 'fr' ? 'Des compétences pour livrer du concret.' : 'Skills for building useful things.' }}</h2>
+			<div class="skill-groups">
+				<div class="skill-group"><b>{{ language === 'fr' ? 'Langages' : 'Languages' }}</b><div class="skill-list"><span>PHP</span><span>JavaScript</span><span>SQL</span><span>Ajax</span><span>YAML</span></div></div>
+				<div class="skill-group"><b>{{ language === 'fr' ? 'Frameworks & composants' : 'Frameworks & components' }}</b><div class="skill-list"><span>Symfony</span><span>Easy2Do</span><span>Doctrine ORM</span><span>Twig</span><span>Vue.js</span><span>API Platform</span></div></div>
+				<div class="skill-group"><b>{{ language === 'fr' ? 'Bases de données' : 'Databases' }}</b><div class="skill-list"><span>PostgreSQL</span><span>SQL</span><span>MySQL</span></div></div>
+				<div class="skill-group"><b>{{ language === 'fr' ? 'Méthodes' : 'Methods' }}</b><div class="skill-list"><span>Agile</span><span>Scrum</span><span>Tests unitaires</span><span>Tests fonctionnels</span><span>Revues de code</span><span>Documentation</span></div></div>
+				<div class="skill-group"><b>{{ language === 'fr' ? 'Outils' : 'Tools' }}</b><div class="skill-list"><span>Git</span><span>Docker</span><span>Linux</span><span>Jenkins</span><span>Bitbucket</span><span>Jira</span><span>Confluence</span><span>Postman</span><span>SonarCloud</span></div></div>
+			</div>
+		</div>
+		<aside class="profile-details">
+				<div class="detail-block">
+				<b>{{ language === 'fr' ? 'Certifications' : 'Certifications' }}</b>
+				<ul>
+					<li>SecNumAcadémie · ANSSI</li>
+					<li>Google Analytics</li>
+					<li>Free Foundational C# with Microsoft Certification · freeCodeCamp</li>
+				</ul>
+			</div>
+				<div class="detail-block">
+				<b>{{ language === 'fr' ? 'Langues' : 'Languages' }}</b>
+				<p>Français <span>natif</span><br>Anglais <span>B2</span><br>Espagnol <span>B1</span></p>
+			</div>
+				<div class="detail-block">
+				<b>{{ language === 'fr' ? 'Mobilité' : 'Mobility' }}</b>
+				<p>{{ language === 'fr' ? 'Originaire de La Réunion · mobile partout en France : Lyon, Bordeaux, Nantes, Toulouse, Rennes, Angers, Paris…' : 'From La Réunion · open to relocate across France: Lyon, Bordeaux, Nantes, Toulouse, Rennes, Angers, Paris…' }}</p>
+			</div>
+				<div class="detail-block qualities-block">
+					<b>{{ language === 'fr' ? 'Autres compétences' : 'Personal strengths' }}</b>
+					<div class="quality-list"><span>Calme</span><span>Pointilleux</span><span>Rigoureux</span><span>Résilient</span><span>{{ language === 'fr' ? 'À l’écoute' : 'Attentive' }}</span></div>
+				</div>
+		</aside>
+	</div>
+</section>
+<section class="profile-contact"><p class="eyebrow">Contact</p><h2>{{ language === 'fr' ? 'Parlons de votre prochain projet.' : 'Let’s talk about your next project.' }}</h2><a class="button button-light" href="mailto:mathias.candidature@gmail.com">mathias.candidature@gmail.com ↗</a></section>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LanguageService } from './app';
+import { LanguageService } from './core/language.service';
 
 @Component({
   selector: 'app-profile-page',

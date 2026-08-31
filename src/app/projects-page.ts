@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { LanguageService, projects } from './app';
+import { LanguageService } from './core/language.service';
+import { projects } from './data/projects.data';
 
 @Component({
   selector: 'app-projects-page',

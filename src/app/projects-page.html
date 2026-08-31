@@ -1,4 +1,73 @@
-<section class="projects-hero"><div><p class="eyebrow">01 · {{ t('navProjects') }}</p><h1>{{ language === 'fr' ? 'Des projets qui résolvent de vrais problèmes.' : 'Projects built to solve real problems.' }}</h1><p class="lead">{{ language === 'fr' ? 'Une sélection de projets personnels, académiques et professionnels, avec le contexte, la stack et les liens utiles.' : 'A selection of personal, academic and professional work, with context, stack and useful links.' }}</p></div><div class="hero-stamp">{{ language === 'fr' ? 'projets\nouverts' : 'open\nprojects' }}</div></section>
-<section class="featured-project"><div class="section-label"><span>01</span><span>{{ language === 'fr' ? 'Projet à la une' : 'Featured project' }}</span></div><div class="project-detail"><div class="preview-frame"><img src="assets/merge-doc-preview.svg" alt="Preview of the merge_doc React interface"><span>REAL UI STRUCTURE / BRANCH: INTERFACE</span></div><div class="project-info"><p class="project-kicker">{{ language === 'fr' ? 'Projet personnel · interface React' : 'Personal project · React interface' }}</p><h2>merge_doc</h2><p>{{ language === 'fr' ? 'Application Python qui fusionne des fichiers PDF, images et documents Word/OpenDocument en un seul PDF. Cette fiche reprend l’interface réellement développée dans la branche interface : frontend React/Vite et API locale FastAPI.' : 'Python application that merges PDF files, images and Word/OpenDocument files into a single PDF. This page reflects the actual interface built on the interface branch: React/Vite frontend and local FastAPI API.' }}</p><div class="facts"><div><b>{{ language === 'fr' ? 'Interface' : 'Interface' }}</b><span>MERGEDOC · Document workspace · Your file stack · Settings</span></div><div><b>{{ language === 'fr' ? 'Actions' : 'Actions' }}</b><span>{{ language === 'fr' ? 'Glisser-déposer · réordonner · watermark · Merge files' : 'Drag and drop · reorder · watermark · Merge files' }}</span></div><div><b>Stack</b><span>Python · FastAPI · React · Vite · Pillow</span></div></div><p class="demo-note"><b>{{ language === 'fr' ? 'Démo' : 'Demo' }}</b> {{ language === 'fr' ? 'Aucune URL publique n’est fournie par le projet : la démo se lance localement avec FastAPI et Vite.' : 'No public URL is provided by the project: run the demo locally with FastAPI and Vite.' }}</p><div class="project-actions"><a class="button button-dark" href="https://github.com/MATHIASCW/merge_doc/tree/interface" target="_blank" rel="noreferrer">{{ language === 'fr' ? 'Voir le code' : 'View source' }} ↗</a><a class="text-link" href="https://github.com/MATHIASCW/merge_doc/blob/interface/README.md" target="_blank" rel="noreferrer">README ↗</a></div></div></div></section>
-<section class="projects-list"><div class="section-label"><span>02</span><span>{{ t('projects') }}</span></div><div class="project-row" *ngFor="let project of projects.slice(1); let i = index"><div class="project-index">0{{ i + 2 }}</div><div><p class="project-kicker">{{ project.type }}</p><h3>{{ project.title }}</h3></div><p class="row-description">{{ project.description }}</p><div class="tags"><span *ngFor="let tag of project.stack">{{ tag }}</span></div><a class="row-arrow" [href]="project.link">↗</a></div></section>
-<section class="contact-strip"><p>{{ language === 'fr' ? 'Un projet en tête ?' : 'Have a project in mind?' }}</p><a routerLink="/profile">{{ language === 'fr' ? 'Découvrir mon profil' : 'Meet my profile' }} ↗</a></section>
+<section class="projects-hero">
+  <div>
+    <p class="eyebrow">01 · {{ t('navProjects') }}</p>
+    <h1>{{ language === 'fr' ? 'Des projets qui résolvent de vrais problèmes.' : 'Projects built to solve real problems.' }}</h1>
+    <p class="lead">{{ language === 'fr' ? 'Une sélection de projets personnels et académiques, avec le contexte, la stack et les liens utiles.' : 'A selection of personal and academic work, with context, stack and useful links.' }}</p>
+  </div>
+  <div class="hero-stamp">{{ language === 'fr' ? 'projets\nouverts' : 'open\nprojects' }}</div>
+</section>
+
+<section class="featured-project">
+  <div class="section-label"><span>01</span><span>{{ language === 'fr' ? 'Projet à la une' : 'Featured project' }}</span></div>
+  <div class="project-detail">
+    <div class="preview-frame">
+      <img src="assets/merge-doc.png" alt="Preview of the merge_doc React interface">
+      <span>REAL UI STRUCTURE / BRANCH: INTERFACE</span>
+    </div>
+    <div class="project-info">
+      <p class="project-kicker">{{ language === 'fr' ? 'Projet personnel · interface React' : 'Personal project · React interface' }}</p>
+      <h2>merge_doc</h2>
+      <p>{{ language === 'fr' ? 'Application Python qui fusionne des fichiers PDF, images et documents Word/OpenDocument en un seul PDF. Cette fiche reprend l’interface réellement développée dans la branche interface : frontend React/Vite et API locale FastAPI.' : 'Python application that merges PDF files, images and Word/OpenDocument files into a single PDF. This page reflects the actual interface built on the interface branch: React/Vite frontend and local FastAPI API.' }}</p>
+      <div class="facts">
+        <div><b>Interface</b><span>MERGEDOC · Document workspace · Your file stack · Settings</span></div>
+        <div><b>Actions</b><span>{{ language === 'fr' ? 'Glisser-déposer · réordonner · watermark · Merge files' : 'Drag and drop · reorder · watermark · Merge files' }}</span></div>
+        <div><b>Stack</b><span>Python · FastAPI · React · Vite · Pillow</span></div>
+      </div>
+      <p class="demo-note"><b>{{ language === 'fr' ? 'Démo' : 'Demo' }}</b> {{ language === 'fr' ? 'Aucune URL publique n’est fournie par le projet : la démo se lance localement avec FastAPI et Vite.' : 'No public URL is provided by the project: run the demo locally with FastAPI and Vite.' }}</p>
+      <div class="project-actions">
+        <a class="button button-dark" href="https://github.com/MATHIASCW/merge_doc/tree/interface" target="_blank" rel="noreferrer">{{ language === 'fr' ? 'Voir le code' : 'View source' }} ↗</a>
+        <a class="text-link" href="https://github.com/MATHIASCW/merge_doc/blob/interface/README.md" target="_blank" rel="noreferrer">README ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-project semantic-project">
+  <div class="section-label"><span>02</span><span>{{ language === 'fr' ? 'Projet académique' : 'Academic project' }}</span></div>
+  <div class="project-detail">
+    <div class="preview-frame semantic-preview">
+      <img src="assets/semantic-web.svg" alt="Tolkien Knowledge Graph built with RDF, SPARQL and SHACL">
+      <span>TOLKIEN GATEWAY / KNOWLEDGE GRAPH</span>
+    </div>
+    <div class="project-info">
+      <p class="project-kicker">{{ language === 'fr' ? 'Projet académique · données sémantiques' : 'Academic project · semantic data' }}</p>
+      <h2>Tolkien Knowledge Graph</h2>
+      <p>{{ language === 'fr' ? 'Construction d’un graphe de connaissances complet à partir du wiki Tolkien Gateway : extraction des infoboxes, transformation RDF, alignement ontologique, validation SHACL, raisonnement et publication via une interface Linked Data.' : 'A complete knowledge graph built from Tolkien Gateway: infobox extraction, RDF transformation, ontology alignment, SHACL validation, reasoning and publication through a Linked Data interface.' }}</p>
+      <div class="facts">
+        <div><b>{{ language === 'fr' ? 'Résultats' : 'Results' }}</b><span>49,242 triples · 2,291 entities · 0 SHACL violations</span></div>
+        <div><b>{{ language === 'fr' ? 'Architecture' : 'Architecture' }}</b><span>RDF/Turtle · schema.org · custom ontology · Fuseki</span></div>
+        <div><b>Stack</b><span>Python · FastAPI · RDFLib · pySHACL · Apache Jena</span></div>
+      </div>
+      <div class="project-actions">
+        <a class="button button-dark" href="https://github.com/MATHIASCW/Semantic-Web-project" target="_blank" rel="noreferrer">{{ language === 'fr' ? 'Voir le code' : 'View source' }} ↗</a>
+        <a class="text-link" href="https://github.com/MATHIASCW/Semantic-Web-project#readme" target="_blank" rel="noreferrer">README ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects-list">
+  <div class="section-label"><span>03</span><span>{{ t('projects') }}</span></div>
+  <div class="project-row" *ngFor="let project of projects.slice(2); let i = index">
+    <div class="project-index">0{{ i + 3 }}</div>
+    <div><p class="project-kicker">{{ project.type }}</p><h3>{{ project.title }}</h3></div>
+    <p class="row-description">{{ project.description }}</p>
+    <div class="tags"><span *ngFor="let tag of project.stack">{{ tag }}</span></div>
+    <a class="row-arrow" [href]="project.link">↗</a>
+  </div>
+</section>
+
+<section class="contact-strip">
+  <p>{{ language === 'fr' ? 'Un projet en tête ?' : 'Have a project in mind?' }}</p>
+  <a routerLink="/profile">{{ language === 'fr' ? 'Découvrir mon profil' : 'Meet my profile' }} ↗</a>
+</section>

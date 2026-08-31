@@ -1,7 +1,30 @@
 <header class="topbar">
-  <a class="brand" routerLink="/projects"><span class="brand-mark">MCW</span><span>Mathias<br>Chane Waye</span></a>
-  <nav aria-label="Main navigation"><a routerLink="/projects" routerLinkActive="current">{{ t('navProjects') }}</a><a routerLink="/profile" routerLinkActive="current">{{ t('navProfile') }}</a><a href="mailto:mathias.candidature@gmail.com">{{ t('navContact') }}</a></nav>
-  <div class="header-actions"><span class="status"><i></i>{{ t('available') }}</span><div class="language" role="group" aria-label="Language"><button [class.active]="language === 'fr'" (click)="setLanguage('fr')">FR</button><button [class.active]="language === 'en'" (click)="setLanguage('en')">EN</button></div></div>
+  <a class="brand" routerLink="/projects">
+    <span class="brand-mark">MCW</span>
+    <span>Mathias<br>Chane Waye</span>
+  </a>
+
+  <nav aria-label="Main navigation">
+    <a routerLink="/projects" routerLinkActive="current">{{ t('navProjects') }}</a>
+    <a routerLink="/profile" routerLinkActive="current">{{ t('navProfile') }}</a>
+    <a href="mailto:mathias.candidature@gmail.com">{{ t('navContact') }}</a>
+  </nav>
+
+  <div class="header-actions">
+    <span class="status"><i></i>{{ t('available') }}</span>
+    <div class="language" role="group" aria-label="Language">
+      <button [class.active]="language === 'fr'" (click)="setLanguage('fr')">FR</button>
+      <button [class.active]="language === 'en'" (click)="setLanguage('en')">EN</button>
+    </div>
+  </div>
 </header>
-<main id="top"><router-outlet></router-outlet></main>
-<footer><span>© 2026 Mathias Chane Waye</span><a href="https://github.com/MATHIASCW" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:mathias.candidature@gmail.com">mathias.candidature@gmail.com</a></footer>
+
+<main id="top">
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <span>© 2026 Mathias Chane Waye</span>
+  <a href="https://github.com/MATHIASCW" target="_blank" rel="noreferrer">GitHub ↗</a>
+  <a href="mailto:mathias.candidature@gmail.com">mathias.candidature@gmail.com</a>
+</footer>
