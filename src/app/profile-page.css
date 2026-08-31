@@ -118,6 +118,35 @@
   background: var(--mint);
 }
 
+.cv-project {
+  padding: 65px 10vw;
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-project-content {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr auto;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 28px;
+}
+
+.cv-project-content h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 48px);
+  letter-spacing: -.05em;
+}
+
+.cv-project-content p {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
 .skills-layout {
   display: grid;
   grid-template-columns: 1.15fr .85fr;
@@ -268,6 +297,15 @@
   .skills-strip {
     grid-template-columns: 1fr;
     gap: 55px;
+  }
+
+  .cv-project {
+    padding: 50px 7vw;
+  }
+
+  .cv-project-content {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .skills-section {

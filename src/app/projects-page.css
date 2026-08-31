@@ -86,6 +86,22 @@ h1 {
   font: 10px var(--mono);
 }
 
+.spreadsheet-project {
+  background: var(--paper);
+}
+
+.spreadsheet-preview {
+  background: var(--yellow);
+}
+
+.voice-project {
+  background: var(--yellow);
+}
+
+.voice-preview {
+  background: var(--coral);
+}
+
 .project-info h2 {
   margin: 0 0 25px;
   font-size: clamp(58px, 8vw, 105px);

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Spreadsheet Data Analysis with pandas</title>
+  <desc id="desc">Three-step data analysis workflow: spreadsheet input, pandas processing and visual insights.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#e85d4a"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="700" fill="#f7f4ee"/>
+  <rect x="28" y="28" width="1144" height="644" rx="14" fill="#202623"/>
+
+  <text x="72" y="88" fill="#a7c8b5" font-family="monospace" font-size="26" letter-spacing="3">SPREADSHEET DATA ANALYSIS</text>
+  <text x="72" y="126" fill="#f7f4ee" font-family="sans-serif" font-size="18">A simple workflow with Python, pandas and Jupyter Notebook</text>
+
+  <g font-family="sans-serif" text-anchor="middle">
+    <rect x="72" y="205" width="300" height="230" rx="10" fill="#25382e" stroke="#a7c8b5" stroke-width="3"/>
+    <text x="222" y="255" fill="#a7c8b5" font-family="monospace" font-size="18">01 / INPUT</text>
+    <text x="222" y="305" fill="#f7f4ee" font-size="28" font-weight="700">Spreadsheet</text>
+    <text x="222" y="345" fill="#f7f4ee" font-size="20">CSV or table data</text>
+    <path d="M142 385h160 M142 410h160 M182 365v65 M242 365v65" stroke="#68706a" stroke-width="2"/>
+
+    <rect x="450" y="205" width="300" height="230" rx="10" fill="#e85d4a"/>
+    <text x="600" y="255" fill="#202623" font-family="monospace" font-size="18">02 / PROCESS</text>
+    <text x="600" y="315" fill="#202623" font-size="34" font-weight="700">pandas</text>
+    <text x="600" y="360" fill="#202623" font-size="20">Import · clean · explore</text>
+    <text x="600" y="400" fill="#202623" font-family="monospace" font-size="17">DataFrame workflow</text>
+
+    <rect x="828" y="205" width="300" height="230" rx="10" fill="#25382e" stroke="#a7c8b5" stroke-width="3"/>
+    <text x="978" y="255" fill="#a7c8b5" font-family="monospace" font-size="18">03 / OUTPUT</text>
+    <text x="978" y="302" fill="#f7f4ee" font-size="28" font-weight="700">Insights</text>
+    <path d="M900 398V360 M950 398V338 M1000 398V372 M1050 398V324" stroke="#e85d4a" stroke-width="30" stroke-linecap="round"/>
+    <path d="M875 416h210" stroke="#a7c8b5" stroke-width="3"/>
+    <text x="978" y="432" fill="#f7f4ee" font-family="monospace" font-size="16">charts and results</text>
+  </g>
+
+  <path d="M372 320h68 M750 320h68" fill="none" stroke="#e85d4a" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <rect x="72" y="515" width="1056" height="100" rx="10" fill="#25382e" stroke="#a7c8b5" stroke-width="2"/>
+  <text x="108" y="555" fill="#a7c8b5" font-family="monospace" font-size="17">PROJECT FLOW</text>
+  <text x="108" y="590" fill="#f7f4ee" font-family="sans-serif" font-size="23">Load data  →  clean values  →  find patterns  →  communicate results</text>
+</svg>
