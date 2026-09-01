@@ -1,6 +1,7 @@
 # MATHIASCW.github.io
 
 Personal portfolio of Mathias Chane Waye, built with Angular. The website presents my background, selected projects and contact details in French and English.
+You can view my personal portfolio at https://mathiascw.github.io.
 
 ## Projects
 
