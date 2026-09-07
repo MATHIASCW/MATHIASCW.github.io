@@ -114,10 +114,6 @@
   padding-left: 3px;
 }
 
-.skills-section {
-  background: var(--mint);
-}
-
 .cv-project {
   padding: 65px 10vw;
   background: var(--paper);
