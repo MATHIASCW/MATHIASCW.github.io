@@ -5,7 +5,7 @@ You can view my personal portfolio at https://mathiascw.github.io.
 
 ## Projects
 
-### MergeDoc
+### Merge Doc
 
 - **Category:** Personal project
 - **Summary:** Local document workspace for combining PDFs, images and Office documents into one PDF in the chosen order. It includes drag-and-drop upload, file ordering, watermark options and automatic merging.
@@ -41,6 +41,14 @@ You can view my personal portfolio at https://mathiascw.github.io.
 - **Source:** [MATHIASCW/analyze-spreadsheet-data-with-pandas](https://github.com/MATHIASCW/analyze-spreadsheet-data-with-pandas)
 
 ![Spreadsheet data analysis workflow](src/assets/spreadsheet-analysis.svg)
+
+### Filter Cast
+
+- **Category:** Personal project
+- **Summary:** Local tool to extract, filter or download audio and video tracks from a media file with FFmpeg, without re-encoding. It can select a track by index, language or title, download from a URL, and optionally separate vocals from accompaniment with Demucs. A local web interface lets you pick a file or URL, the output mode and the audio track.
+- **Technologies:** Python, FFmpeg, yt-dlp, Demucs, ASP.NET Core (C#)
+- **Source:** [MATHIASCW/filter-cast](https://github.com/MATHIASCW/filter-cast)
+
 
 ## Portfolio features
 
