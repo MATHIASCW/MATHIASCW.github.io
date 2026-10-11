@@ -10,6 +10,14 @@ export const projects: Project[] = [
     accent: 'coral'
   },
   {
+    title: 'Filter Cast',
+    type: 'Personal project',
+    description: 'Local tool to extract or filter audio and video tracks with FFmpeg, with optional vocal separation (Demucs) and a web interface.',
+    stack: ['Python', 'ASP.NET Core', 'FFmpeg'],
+    link: 'https://github.com/MATHIASCW/filter-cast',
+    accent: 'mint'
+  },
+  {
     title: 'Tolkien Knowledge Graph',
     type: 'Academic project',
     description: 'Knowledge graph built from Tolkien Gateway with RDF/Turtle, SPARQL, SHACL validation and a Linked Data API.',

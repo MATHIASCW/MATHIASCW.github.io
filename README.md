@@ -49,6 +49,7 @@ You can view my personal portfolio at https://mathiascw.github.io.
 - **Technologies:** Python, FFmpeg, yt-dlp, Demucs, ASP.NET Core (C#)
 - **Source:** [MATHIASCW/filter-cast](https://github.com/MATHIASCW/filter-cast)
 
+![Spreadsheet data analysis workflow](src/assets/filter-cast.png)
 
 ## Portfolio features
 
