@@ -8,7 +8,7 @@
 </section>
 
 <section class="featured-project">
-  <div class="section-label"><span>01</span><span>{{ language === 'fr' ? 'Projet à la une' : 'Featured project' }}</span></div>
+  <div class="section-label"><span>01</span><span>{{ language === 'fr' ? 'Projet personnel' : 'Personal project' }}</span></div>
   <div class="project-detail">
     <div class="preview-frame">
       <img src="assets/merge-doc.png" alt="Preview of the merge_doc React interface">
@@ -131,7 +131,7 @@
 
 <section class="projects-list">
   <div class="section-label"><span>05</span><span>{{ t('projects') }}</span></div>
-  <div class="project-row" *ngFor="let project of projects.slice(4); let i = index">
+  <div class="project-row" *ngFor="let project of projects.slice(5); let i = index">
     <div class="project-index">0{{ i + 5 }}</div>
     <div><p class="project-kicker">{{ project.type }}</p><h3>{{ project.title }}</h3></div>
     <p class="row-description">{{ project.description }}</p>
